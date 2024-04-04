@@ -1,0 +1,58 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.8rem;
+
+  &__form-box {
+    display: flex;
+    gap: 0;
+  }
+
+  &__input {
+    background-color: #fff;
+    border: 0;
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    padding: 2rem;
+  }
+
+  &__btn {
+    background-color: #000;
+    border: 0;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    padding: 2rem;
+  }
+
+  &__info {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+
+      &--text {
+        color: $color-dark-gray-900;
+        font-weight: 600;
+        font-size: $text-font-size;
+      }
+    }
+
+    &-heading {
+      font-size: 1rem;
+      color: $color-dark-gray-200;
+      letter-spacing: 0.75px;
+    }
+  }
+}

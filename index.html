@@ -37,6 +37,47 @@
         <header class="heading">
           <h1 class="heading__primary">IP Address Tracker</h1>
         </header>
+
+        <div class="address">
+          <form autocomplete="off" class="address__form-box">
+            <label for="address__input" class="sr-only sr-only-focusable">
+              Enter an IP address
+            </label>
+            <input
+              type="text"
+              id="address__input"
+              placeholder="Enter an IP address"
+              class="address__input"
+            />
+            <button class="address__btn">
+              <img src="images/icon-arrow.svg" alt="Arrow button" />
+            </button>
+          </form>
+
+          <div class="address__info">
+            <div class="address__info-item">
+              <h2 class="address__info-heading">IP ADDRESS</h2>
+              <p class="address__info-item--text">192.212.174.101</p>
+            </div>
+
+            <div class="address__info-item">
+              <h2 class="address__info-heading">LOCATION</h2>
+              <p class="address__info-item--text">Brooklyn, NY 10001</p>
+            </div>
+
+            <div class="address__info-item">
+              <h2 class="address__info-heading">TIMEZONE</h2>
+              <p class="address__info-item--text">UTC -05:00</p>
+            </div>
+
+            <div class="address__info-item">
+              <h2 class="address__info-heading">ISP</h2>
+              <p class="address__info-item--text">SpaceX Starlink</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map"></div>
       </section>
     </main>
   </body>
