@@ -133,19 +133,33 @@ select {
   padding: 2rem;
 }
 .address__btn {
-  background-color: #000;
+  background-color: hsl(0, 0%, 17%);
   border: 0;
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
   padding: 2rem;
+  transition: all 0.3s;
+}
+.address__btn:hover, .address__btn:focus {
+  background-color: #555555;
 }
 .address__info {
   background-color: #fff;
-  padding: 2rem;
+  padding: 2rem 4rem 2rem 4rem;
   border-radius: 14px;
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 2rem;
+}
+.address__info-item:last-child {
+  border-right: none;
+}
+@media (min-width: 768px) {
+  .address__info {
+    flex-direction: row;
+    gap: 2.4rem;
+    margin: 0 2rem 0 2rem;
+  }
 }
 .address__info-item {
   display: flex;
@@ -154,10 +168,17 @@ select {
   justify-content: center;
   gap: 0.8rem;
 }
+@media (min-width: 768px) {
+  .address__info-item {
+    border-right: 1px solid hsl(0, 0%, 59%);
+    padding: 2rem 4rem 2rem 0;
+    align-items: stretch;
+  }
+}
 .address__info-item--text {
   color: hsl(0, 0%, 17%);
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .address__info-heading {
   font-size: 1rem;
