@@ -6,6 +6,9 @@
   gap: 2rem;
   font-size: 1.8rem;
 
+  position: relative;
+  z-index: 2;
+
   @media (min-width: 768px) {
     gap: 5rem;
   }
