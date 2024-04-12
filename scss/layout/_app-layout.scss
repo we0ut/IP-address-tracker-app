@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   z-index: 1;
-  // overflow: hidden;
 
   img {
     position: absolute;
@@ -14,12 +13,10 @@
 }
 
 .heading {
-  padding: 2rem;
   position: relative;
   z-index: 2;
 
   @media (min-width: 768px) {
-    padding: 4rem;
   }
 
   &__primary {
@@ -34,19 +31,4 @@
       font-size: 3rem;
     }
   }
-}
-
-.s-app {
-  height: 100vh;
-}
-
-.s-app__map-container {
-  position: relative;
-  width: 100%;
-}
-
-#s-app__map {
-  inset: 0;
-  position: absolute;
-  z-index: 0;
 }

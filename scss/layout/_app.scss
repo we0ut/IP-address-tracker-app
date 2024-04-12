@@ -1,0 +1,17 @@
+.s-app {
+  height: 100vh;
+
+  @media (min-width: 768px) {
+  }
+
+  &__map-container {
+    position: relative;
+    width: 100%;
+  }
+}
+
+#s-app__map {
+  inset: 0;
+  position: absolute;
+  z-index: 0;
+}
