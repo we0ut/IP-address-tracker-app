@@ -1,9 +1,18 @@
 "use strict";
 
 const addressInputEl = document.querySelector(".s-app__address__input");
+const appContainer = document.querySelector(".s-app");
+const appContentEl = document.querySelector(".s-app__address");
+const appMapEl = document.querySelector(".s-app__map-container");
+
+window.addEventListener("load", () => {
+  const appHeight = appContainer.offsetHeight;
+  const contentHeight = appContentEl.offsetHeight;
+  const mapHeight = appHeight - contentHeight;
+  appMapEl.style.height = `${mapHeight}px`;
+});
 
 const loadMap = (position) => {
-  console.log(position);
   const { latitude } = position.coords;
   const { longitude } = position.coords;
 

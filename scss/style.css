@@ -131,32 +131,31 @@ select {
 
 .s-app__map-container {
   position: relative;
-  height: 50vh;
   width: 100%;
 }
 
 #s-app__map {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   position: absolute;
   z-index: 0;
 }
 
 .s-app__address {
+  background-image: url(../images/pattern-bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   font-size: 1.8rem;
+  padding-bottom: 150px;
   position: relative;
   z-index: 2;
 }
 @media (min-width: 768px) {
   .s-app__address {
-    gap: 5rem;
+    background-image: url(../images/pattern-bg-desktop.png);
   }
 }
 .s-app__address__form-box {
@@ -194,6 +193,9 @@ select {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
 }
 @media (min-width: 768px) {
   .s-app__address__info {
