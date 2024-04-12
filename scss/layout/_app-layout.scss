@@ -36,15 +36,13 @@
   }
 }
 
-body,
-html,
-main {
-  height: 100%;
+.s-app {
+  height: 100vh;
 }
 
 .s-app__map-container {
   position: relative;
-  height: 100vh;
+  height: 50vh;
   width: 100%;
 }
 
