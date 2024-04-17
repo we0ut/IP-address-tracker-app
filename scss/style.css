@@ -127,10 +127,10 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   font-size: 1.8rem;
-  padding-top: 2rem;
-  padding-bottom: 150px;
+  padding-top: 3rem;
+  padding-bottom: 16rem;
   position: relative;
   z-index: 2;
 }
@@ -138,6 +138,7 @@ select {
   .s-app__address {
     background-image: url(../images/pattern-bg-desktop.png);
     padding-top: 4rem;
+    gap: 4rem;
   }
 }
 .s-app__address__form-box {
@@ -164,13 +165,15 @@ select {
   border-bottom-right-radius: 14px;
   padding: 2rem;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .s-app__address__btn:hover, .s-app__address__btn:focus {
   background-color: #555555;
 }
 .s-app__address__info {
   background-color: #fff;
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 2.8rem 4rem 2.8rem 4rem;
+  max-width: 32rem;
   border-radius: 14px;
   display: flex;
   flex-direction: column;
@@ -183,6 +186,7 @@ select {
   .s-app__address__info {
     transform: translateY(50%);
     gap: 2rem;
+    max-width: 120rem;
   }
 }
 .s-app__address__info-item:last-child {
@@ -206,7 +210,7 @@ select {
 @media (min-width: 768px) {
   .s-app__address__info-item {
     border-right: 1px solid hsl(0, 0%, 59%);
-    padding: 2rem 4rem 2rem 0;
+    padding: 0 4rem 2rem 0;
     align-items: stretch;
   }
 }
@@ -237,6 +241,7 @@ select {
 .s-app__map-container {
   position: relative;
   width: 100%;
+  z-index: 0;
 }
 
 #s-app__map {

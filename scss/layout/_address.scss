@@ -7,11 +7,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 
   font-size: 1.8rem;
-  padding-top: 2rem;
-  padding-bottom: 150px;
+  padding-top: 3rem;
+  padding-bottom: 16rem;
 
   position: relative;
   z-index: 2;
@@ -19,6 +19,7 @@
   @media (min-width: 768px) {
     background-image: url(../images/pattern-bg-desktop.png);
     padding-top: 4rem;
+    gap: 4rem;
   }
 
   &__form-box {
@@ -46,6 +47,7 @@
     border-bottom-right-radius: $border-radius;
     padding: 2rem;
     transition: all 0.3s;
+    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -55,7 +57,8 @@
 
   &__info {
     background-color: #fff;
-    padding: 2rem 4rem 2rem 4rem;
+    padding: 2.8rem 4rem 2.8rem 4rem;
+    max-width: 32rem;
     border-radius: $border-radius;
     display: flex;
     flex-direction: column;
@@ -67,6 +70,7 @@
     @media (min-width: 768px) {
       transform: translateY(50%);
       gap: 2rem;
+      max-width: 120rem;
     }
 
     &-item:last-child {
@@ -89,7 +93,7 @@
 
       @media (min-width: 768px) {
         border-right: 1px solid $color-dark-gray-200;
-        padding: 2rem 4rem 2rem 0;
+        padding: 0 4rem 2rem 0;
         align-items: stretch;
       }
     }
