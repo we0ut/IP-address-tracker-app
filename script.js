@@ -1,26 +1,36 @@
 "use strict";
 
 const addressInputEl = document.querySelector(".s-app__address__input");
-const ipAddressEl = document.querySelector(".s-app__address__info-text--ip");
+const ipAddressEl = document.querySelector(".s-app__address-info-text--ip");
 const locationEl = document.querySelector(
-  ".s-app__address__info-text--location"
+  ".s-app__address-info-text--location"
 );
 const timezoneEl = document.querySelector(
-  ".s-app__address__info-text--timezone"
+  ".s-app__address-info-text--timezone"
 );
-const ispEl = document.querySelector(".s-app__address__info-text--isp");
+const ispEl = document.querySelector(".s-app__address-info-text--isp");
 const appContainer = document.querySelector(".s-app");
 const appContentEl = document.querySelector(".s-app__address");
 const appMapEl = document.querySelector(".s-app__map-container");
 
 let map;
 
-window.addEventListener("load", () => {
+// window.addEventListener("load", () => {
+//   const appHeight = appContainer.offsetHeight;
+//   const contentHeight = appContentEl.offsetHeight;
+//   const mapHeight = appHeight - contentHeight;
+//   appMapEl.style.height = `${mapHeight}px`;
+// });
+
+const modifyHeight = () => {
   const appHeight = appContainer.offsetHeight;
   const contentHeight = appContentEl.offsetHeight;
   const mapHeight = appHeight - contentHeight;
   appMapEl.style.height = `${mapHeight}px`;
-});
+};
+
+window.addEventListener("load", modifyHeight);
+window.addEventListener("change", modifyHeight);
 
 const fetchGeolocation = async (ipAddress) => {
   const apiKey = "at_94gpy4ZUnVTlGBX1xy0RtktwD6Hxu";

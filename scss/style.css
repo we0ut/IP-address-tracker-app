@@ -119,6 +119,14 @@ select {
   }
 }
 
+.s-app {
+  height: 100vh;
+}
+.s-app__map-container {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
 .s-app__address {
   background-image: url(../images/pattern-bg-mobile.png);
   background-repeat: no-repeat;
@@ -170,7 +178,7 @@ select {
 .s-app__address__btn:hover, .s-app__address__btn:focus {
   background-color: #555555;
 }
-.s-app__address__info {
+.s-app__address-info {
   background-color: #fff;
   padding: 2.8rem 4rem 2.8rem 4rem;
   max-width: 32rem;
@@ -183,24 +191,24 @@ select {
   transform: translateY(57%);
 }
 @media (min-width: 768px) {
-  .s-app__address__info {
+  .s-app__address-info {
     transform: translateY(50%);
     gap: 2rem;
     max-width: 120rem;
   }
 }
-.s-app__address__info-item:last-child {
+.s-app__address-info-item:last-child {
   border-right: none;
 }
 @media (min-width: 768px) {
-  .s-app__address__info {
+  .s-app__address-info {
     padding: 4rem;
     flex-direction: row;
     gap: 2.4rem;
     margin: 0 2rem 0 2rem;
   }
 }
-.s-app__address__info-item {
+.s-app__address-info-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -208,40 +216,31 @@ select {
   gap: 1.4rem;
 }
 @media (min-width: 768px) {
-  .s-app__address__info-item {
+  .s-app__address-info-item {
     border-right: 1px solid hsl(0, 0%, 59%);
     padding: 0 4rem 2rem 0;
     align-items: stretch;
   }
 }
-.s-app__address__info-text {
+.s-app__address-info-text {
   color: hsl(0, 0%, 17%);
   font-weight: 600;
   font-size: 2rem;
 }
 @media (min-width: 768px) {
-  .s-app__address__info-text {
+  .s-app__address-info-text {
     font-size: 2.4rem;
   }
 }
-.s-app__address__info-heading {
+.s-app__address-info-heading {
   font-size: 1rem;
   color: hsl(0, 0%, 59%);
   letter-spacing: 1px;
 }
 @media (min-width: 768px) {
-  .s-app__address__info-heading {
+  .s-app__address-info-heading {
     font-size: 1.4rem;
   }
-}
-
-.s-app {
-  height: 100vh;
-}
-.s-app__map-container {
-  position: relative;
-  width: 100%;
-  z-index: 0;
 }
 
 #s-app__map {
